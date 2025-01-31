@@ -40,6 +40,17 @@ brushless) by ESC and some more. In this mode a terminal can be used to receive 
 To receive valid S.Bus protocols the output signal must be inverted by a simple electronic patch.
 //-----------------------------------------------------------------------------
 
+How to change the Control Mode
+After flashing this firmware connect the board and turn it on. You will not hear the normal
+sound melody, but instead you hear beeps accordingly to the selected control mode (2 is default). 
+One beep for ADC control mode, two beeps for Serial Command Interpreter control mode
+and three beeps for RC-S.Bus control mode. To change the control mode turn on the board and 
+keep the button pressed. After 3 seconds you will hear beeps of the next command mode. 
+If you keep the button pressed, then the next mode is selected - and so on. After mode 3 
+(RC-S.Bus) the next mode will be 1 (ADC) again. Simply release the button after the desired 
+mode is selected. The board will directly start in the new mode.
+//-----------------------------------------------------------------------------
+
 Programming Connector SWD
   +3.3V // Can be used as supply for analog inputs (max. 30mA)
   SWCLK  
